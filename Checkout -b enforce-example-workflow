@@ -1,0 +1,4 @@
+git checkout -b enforce-examples-workflow
+git add .github examples CONTRIBUTING.md .github/PULL_REQUEST_TEMPLATE.md
+git commit -m "Add duplicate checks, manifest validation, and EU-first examples workflow"
+git push --set-upstream origin enforce-examples-workflow
