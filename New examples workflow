@@ -1,0 +1,3 @@
+Important: New examples workflow
+
+To reduce duplicated work and ensure EU friendly hosting, runnable demos must be hosted on an approved sandbox and listed in examples/manifest.json. Do not paste full runnable code into docs. PRs that paste full examples will be blocked by CI. If you need help migrating existing CodePen demos, comment here and maintainers will assist.
