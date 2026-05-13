@@ -1,0 +1,23 @@
+## Examples and Runnable Demos Policy
+
+**Policy summary**
+- Text and reference docs: edit files in this repo.
+- Runnable demos: host on an approved sandbox and add the demo to `examples/manifest.json`.
+- Do not paste full runnable example code into markdown files. Embeds or short summaries only.
+
+**Approved demo hosts**
+- codesandbox.io
+- jsfiddle.net
+- dabblet.com
+- self-hosted sandboxes listed in this repo (your-self-hosted-domain.example)
+
+**How to add or update a demo**
+1. Create or update the demo on an approved host.
+2. Add or update an entry in `examples/manifest.json` with `id`, `title`, `canonical_url`, `description`, `tags`, and `authors`.
+3. In the doc, embed the demo or include a short summary and link to the canonical URL.
+4. Open a PR. CI will validate the manifest and block PRs that paste full example code.
+
+**PR checklist**
+- [ ] I updated the canonical demo on an approved host or updated `examples/manifest.json`.
+- [ ] I did not paste full runnable code into the doc.
+- [ ] I added authorship metadata to the manifest entry.
