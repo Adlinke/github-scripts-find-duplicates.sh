@@ -1,0 +1,11 @@
+[
+  {
+    "id": "codesandbox-abc123",
+    "title": "Accessible form example",
+    "canonical_url": "https://codesandbox.io/s/accessible-form-abc123",
+    "description": "Minimal accessible form demonstrating labels and aria attributes",
+    "tags": ["forms","accessibility"],
+    "authors": ["Jane Doe <jane@example.com>"],
+    "locale": "en-US"
+  }
+]
