@@ -1,0 +1,21 @@
+name: Duplicate and Manifest Checks
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - 'examples/manifest.json'
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+      - name: Run duplicate detection
+        run: |
+          chmod +x .github/scripts/find-duplicates.sh
+          ./.github/scripts/find-duplicates.sh
+      - name: Validate examples manifest
+        run: |
+          chmod +x .github/scripts/validate-manifest.sh
+          ./.github/scripts/validate-manifest.sh
